@@ -5,7 +5,9 @@ Todo microsserviço tem um ponto de entrada (na maior parte das vezes chamado de
 ![Screenshot_2](https://user-images.githubusercontent.com/72028645/153642553-dfcd7fdb-4c7f-419a-bb43-f1ffa96cd42f.png)
 
 ## Requisitos
-- MariaDB, HeidiSQL
+- MariaDB, HeidiSQL.
+- Java.
+- IDE/Terminal.
 
 ## Microsserviço Loja
 Neste repositório, vimos:
