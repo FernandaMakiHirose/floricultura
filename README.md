@@ -9,10 +9,10 @@ Todo microsserviço tem um ponto de entrada (na maior parte das vezes chamado de
 
 ## Microsserviço Loja
 Neste repositório, vimos:
-- Qual a solução a ser implementada no curso
-  - Teremos três microsserviços: Fornecedor, Loja e Transportador
-- Uma apresentação da modelagem focado em DDD (Domain Driven Design)
-  - Quebraremos o domínio em contextos menores (bounded context)
-  - Um microsserviço é a implementação de um contexto
-- O uso do Postman como cliente HTTP
-- A criação do microsserviço Loja usando Spring Boot
+- Qual a solução a ser implementada no curso.
+  - Teremos três microsserviços: Fornecedor, Loja e Transportador.
+- Uma apresentação da modelagem focado em DDD (Domain Driven Design).
+  - Quebraremos o domínio em contextos menores (bounded context).
+  - Um microsserviço é a implementação de um contexto.
+- O uso do Postman como cliente HTTP.
+- A criação do microsserviço Loja usando Spring Boot.
