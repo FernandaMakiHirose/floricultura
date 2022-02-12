@@ -40,6 +40,15 @@ Todo microsserviço tem um ponto de entrada (na maior parte das vezes chamado de
   - Para tal, devemos configurar o nome do microsserviço, profile e URL do Config Server.
 - Que existem várias formas de definir um repositório de configurações, entre elas o GitHub.
 
+- Que o Client Side Load Balancing (CSLB) é o cliente HTTP que decide qual microsserviço recebe a requisição
+  - Isto é importante, pois pode ter várias instâncias do mesmo serviço no ar
+  - A configuração do CSLB é feita a partir da anotação @LoadBalanced, na criação do RestTemplate
+  - Como implementação do CSLB, usamos um projeto chamado Ribbon, que faz parte do Spring Cloud Netflix
+- Para descobrir quais clientes existem, podemos injetar a interface DiscoveryClient
+- Como alternativa ao RestTemplate, podemos usar o Spring Feign, que já usa o Ribbon para CSLB
+- O Spring Feign exige apenas uma interface, com a definição e mapeamento dos métodos que executarão a requisição
+  - Toda a implementação da interface é gerada pelo Spring Feign
+
 ## Consolidando o seu conhecimento
 ### O que é síncrona? 
 A cada requisição, a execução da aplicação para, esperando uma resposta.
@@ -52,3 +61,6 @@ Para que todas as configurações, principalmente as de banco de dados, estejam 
 
 ### Temos algumas tecnologias trabalhando em conjunto para prover a funcionalidade de Load Balancing. Como elas estão integradas?
 O Eureka Client é usado não apenas para se registrar no Eureka Server, mas também para buscar as outras instâncias que já se registraram. O Ribbon utiliza essas informações para aplicar o seu algoritmo de Load Balancing no momento em que o RestTemplate efetua as suas requisições para uma outra aplicação.
+
+### Load Balancing é o processo de distribuir as requisições vindas dos usuários para as várias instâncias disponíveis. Como funciona o Client Side Load Balancing que estamos utilizando nas requisições da loja?
+A aplicação cliente conhece as instâncias disponíveis e, usando algum algoritmo de rotação do Ribbon, acessa uma instância diferente a cada requisição do usuário.
