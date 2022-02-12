@@ -37,4 +37,4 @@ Todo microsserviço tem um ponto de entrada (na maior parte das vezes chamado de
 A cada requisição, a execução da aplicação para, esperando uma resposta.
 
 ## Como adicionar projetos dentro de um diretório raiz do jeito certo?
-- Para adicionar um projeto, antes exclua a pasta `.idea`, adicione o novo projeto, feche e abra a janela do diretório raiz. [Achei nessa solução](https://qastack.com.br/programming/11454822/import-maven-dependencies-in-intellij-idea).
+- Para adicionar um projeto, antes exclua a pasta `.idea`, adicione o novo projeto, feche e abra a janela do diretório raiz. [Solução](https://qastack.com.br/programming/11454822/import-maven-dependencies-in-intellij-idea).
