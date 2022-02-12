@@ -33,12 +33,12 @@ Todo microsserviço tem um ponto de entrada (na maior parte das vezes chamado de
 - Como registrar da Loja e do Fornecedor no Eureka Server.
 - A resolução do IP/porta através do nome do microsserviço nas requisições.
 
-- Que um servidor de configuração é o lugar central para definir as configurações dos serviços
-- Que todas as configurações dos microsserviços devem ficar externalizadas e centralizadas
-- Que o Spring Config Server é uma implementação do servidor do projeto Spring Cloud
-- Sobre a integração dos microsserviços com o servidor de configuração
-  - Para tal, devemos configurar o nome do microsserviço, profile e URL do Config Server
-- Que existem várias formas de definir um repositório de configurações, entre elas o GitHub
+- Que um servidor de configuração é o lugar central para definir as configurações dos serviços.
+- Que todas as configurações dos microsserviços devem ficar externalizadas e centralizadas.
+- Que o Spring Config Server é uma implementação do servidor do projeto Spring Cloud.
+- Sobre a integração dos microsserviços com o servidor de configuração.
+  - Para tal, devemos configurar o nome do microsserviço, profile e URL do Config Server.
+- Que existem várias formas de definir um repositório de configurações, entre elas o GitHub.
 
 ## O que é síncrona? 
 A cada requisição, a execução da aplicação para, esperando uma resposta.
