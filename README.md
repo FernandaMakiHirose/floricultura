@@ -51,4 +51,4 @@ A cada requisição, a execução da aplicação para, esperando uma resposta.
 Para que todas as configurações, principalmente as de banco de dados, estejam disponíveis antes do início do carregamento do contexto da nossa aplicação.
 
 ### Temos algumas tecnologias trabalhando em conjunto para prover a funcionalidade de Load Balancing. Como elas estão integradas?
-O Eureka Client é usado não apenas para se registrar no Eureka Server, mas também para buscar as outras instâncias que já se registraram. O Ribbon utiliza essas informações para aplicar o seu algoritmo de Load Balancing no momento em que o RestTemplate efetua as suas requisições para uma outra aplicação
+O Eureka Client é usado não apenas para se registrar no Eureka Server, mas também para buscar as outras instâncias que já se registraram. O Ribbon utiliza essas informações para aplicar o seu algoritmo de Load Balancing no momento em que o RestTemplate efetua as suas requisições para uma outra aplicação.
