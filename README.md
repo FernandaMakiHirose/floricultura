@@ -84,7 +84,7 @@ Assim como nos sistemas monolíticos, temos logs separados em máquinas diferent
 Além da facilidade de acessar em um único local todo o log gerado pela aplicação, temos também a possibilidade de filtrar os logs em uma única transação. Com isso, através da formatação adequada do log, sabemos não só onde os erros foram gerados, mas em que momento aconteceu, pois os logs são escritos com os dados de milissegundos logo no início da linha.
 
 ## Conclusão 
-O microsserviço não vai compartilhar o seu banco de dados com outros microsserviços, ele tem realmente a implementação de uma funcionalidade, de certa forma independente das outras. Depois disso, nós entendemos qual era a solução que íamos começar a implementar neste curso. Nós implementamos o microsserviço da loja e do fornecedor, e nos preocupamos com a comunicação entre os dois.
+O microsserviço não vai compartilhar o seu banco de dados com outros microsserviços, ele tem realmente a implementação de uma funcionalidade, de certa forma independente das outras. Nós implementamos o microsserviço da loja e do fornecedor, e nos preocupamos com a comunicação entre os dois.
 
 Como é que um microsserviço encontra um outro microsserviço, dado que temos várias instâncias de microsserviços, podemos pode ter várias instâncias? Então aprendemos a configurar o Eureka e implementamos a configuração dos nossos microssserviços para, ao subirem, eles se registrarem no Eureka, que é um service registry, um service discovery também.
 
@@ -106,7 +106,7 @@ Foi onde implementamos o Spring Sleuth. Então conseguimos já entender não só
 
 Esse foi o assunto desse treinamento. Mas não para por aí, nós temos um treinamento a seguir, que vai lidar com questões mais de segurança e tratamento de erro, então quando uma comunicação entre um microsserviço e outro, ela tem um problema, como é que nos recuperamos? Porque uma requisição lenta, imagine uma enxurrada de requisições para um microsserviço, está demorando alguns segundos para processar cada uma dessas requisições.
 
-Ele vai perdendo as threads dele, desse microsserviço, até o momento em que ele não consegue mais responder. Então como fazemos para lidar com isso? E, dado que um erro aconteça, como é que respondemos da melhor forma para o usuário? tudo isso nós vamos ver no próximo curso, assim como vamos aprender a dividir threads entre um endpoint e outro endpoint dentro de um próprio microsserviços.
+Ele vai perdendo as threads dele, desse microsserviço, até o momento em que ele não consegue mais responder. Então como fazemos para lidar com isso? E, dado que um erro aconteça, como é que respondemos da melhor forma para o usuário? tudo isso nós vamos ver no próximo repositório, assim como vamos aprender a dividir threads entre um endpoint e outro endpoint dentro de um próprio microsserviços.
 
 Vamos entender uma lógica diferente de tratar erros, porque não estamos lidando com uma transação, essa transação que temos dentro de um monolito, de uma aplicação que, dado uma requisição do usuário, ela vai fazendo alterações em banco, vai lendo mensagem na fila de MQ e etc., e no final ou tudo dá certo ou tudo volta, ele dá rollback.
 
