@@ -25,14 +25,16 @@ Todo microsserviço tem um ponto de entrada (na maior parte das vezes chamado de
 
 - A integração entre microsserviços com RestTemplate.
   - O RestTemplate do Spring permite chamadas HTTP de alto nível.
-- Um introdução ao Service discovery e Service registry
-  - Service registry é um servidor central, onde todos os microsserviços ficam cadastrados (nome e IP/porta)
-  - Service discovery é um mecanismo de descoberta do IP do microsserviço pelo nome
-  - Dessa forma, nenhum microsserviço fica acoplado ao outro pelo IP/porta
-- A implementação do service registry através do Eureka Server
-- Como registrar da Loja e do Fornecedor no Eureka Server
-- A resolução do IP/porta através do nome do microsserviço nas requisições
+- Um introdução ao Service discovery e Service registry.
+  - Service registry é um servidor central, onde todos os microsserviços ficam cadastrados (nome e IP/porta).
+  - Service discovery é um mecanismo de descoberta do IP do microsserviço pelo nome. Sem ele a aplicação não consegue encontrar os microsserviço.
+  - Dessa forma, nenhum microsserviço fica acoplado ao outro pelo IP/porta.
+- A implementação do service registry através do Eureka Server.
+- Como registrar da Loja e do Fornecedor no Eureka Server.
+- A resolução do IP/porta através do nome do microsserviço nas requisições.
 
 ## O que é síncrona? 
 A cada requisição, a execução da aplicação para, esperando uma resposta.
 
+## Como adicionar projetos dentro de um diretório raiz do jeito certo?
+- Para adicionar um projeto, antes exclua a pasta `.idea`, adicione o novo projeto, feche e abra a janela do diretório raiz. [Achei nessa solução](https://qastack.com.br/programming/11454822/import-maven-dependencies-in-intellij-idea).
