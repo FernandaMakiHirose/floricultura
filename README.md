@@ -40,14 +40,15 @@ Todo microsserviço tem um ponto de entrada (na maior parte das vezes chamado de
   - Para tal, devemos configurar o nome do microsserviço, profile e URL do Config Server.
 - Que existem várias formas de definir um repositório de configurações, entre elas o GitHub.
 
-## O que é síncrona? 
+## Consolidando o seu conhecimento
+### O que é síncrona? 
 A cada requisição, a execução da aplicação para, esperando uma resposta.
 
-## Como adicionar projetos dentro de um diretório raiz do jeito certo?
+### Como adicionar projetos dentro de um diretório raiz do jeito certo?
 - Para adicionar um projeto, antes exclua a pasta `.idea`, adicione o novo projeto, feche e abra a janela do diretório raiz. [Solução](https://qastack.com.br/programming/11454822/import-maven-dependencies-in-intellij-idea).
 
-## Por que foi necessário separar a configuração do spring-config em outro arquivo (bootstrap.yml)?
+### Por que foi necessário separar a configuração do spring-config em outro arquivo (bootstrap.yml)?
 Para que todas as configurações, principalmente as de banco de dados, estejam disponíveis antes do início do carregamento do contexto da nossa aplicação.
 
-## Temos algumas tecnologias trabalhando em conjunto para prover a funcionalidade de Load Balancing. Como elas estão integradas?
+### Temos algumas tecnologias trabalhando em conjunto para prover a funcionalidade de Load Balancing. Como elas estão integradas?
 O Eureka Client é usado não apenas para se registrar no Eureka Server, mas também para buscar as outras instâncias que já se registraram. O Ribbon utiliza essas informações para aplicar o seu algoritmo de Load Balancing no momento em que o RestTemplate efetua as suas requisições para uma outra aplicação
