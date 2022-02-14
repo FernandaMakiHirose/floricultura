@@ -4,12 +4,6 @@ Todo microsserviço tem um ponto de entrada (na maior parte das vezes chamado de
 ## Sobre o Projeto
 ![Screenshot_2](https://user-images.githubusercontent.com/72028645/153642553-dfcd7fdb-4c7f-419a-bb43-f1ffa96cd42f.png)
 
-### Dependências
-- loja: Spring Boot Starter Web
-- fornecedor: JPA, Spring Boot Starter Web, MySQL Driver
-- eureka-server: Eureka
-- config-server: 
-
 ## Requisitos
 - MariaDB, HeidiSQL.
 - Java.
